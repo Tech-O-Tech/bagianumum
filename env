@@ -14,7 +14,7 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+# CI_ENVIRONMENT = depelopment
 
 #--------------------------------------------------------------------
 # APP
@@ -40,9 +40,9 @@
 #--------------------------------------------------------------------
 
 # database.default.hostname = localhost
-# database.default.database = ci4
+# database.default.database = bu_aset
 # database.default.username = root
-# database.default.password = root
+# database.default.password = 
 # database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 
