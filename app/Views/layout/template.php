@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIBAPER</title>
+    <title>SIMPERANDIS</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="<?php base_url(); ?>/home/home.php"><img src="<?php base_url(); ?>/assets/images/logo/logo3.png" style="width:100%; height:100%;"></a>
+                            <a href="<?php base_url(); ?>/home/home.php"><img src="<?php base_url(); ?>/assets/images/logo/logo.png" style="width:100%; height:100%;"></a>
                         </div>
 
                         <div class="toggler">

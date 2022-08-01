@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - BKP</title>
+    <title>Login - SIMPERANDIS</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php base_url(); ?>/assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?php base_url(); ?>/assets/vendors/bootstrap-icons/bootstrap-icons.css">
@@ -27,7 +27,7 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo">
-                        <a href="/"><img style="width:100%; height:100%;" src="<?php base_url(); ?>/assets/images/logo/logo3.png"></a>
+                        <a href="/"><img style="width:100%; height:100%;" src="<?php base_url(); ?>/assets/images/logo/logo.png"></a>
                     </div>
 
 
