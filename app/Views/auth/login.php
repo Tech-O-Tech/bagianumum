@@ -45,7 +45,7 @@
 
                     <form action="/auth/valid_login" method="post">
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="text" name="nip" class="form-control form-control-xl" placeholder="NIP">
+                            <input type="text" name="nip_pegawai" class="form-control form-control-xl" placeholder="NIP">
                             <div class="form-control-icon">
                                 <i class="bi bi-person"></i>
                             </div>

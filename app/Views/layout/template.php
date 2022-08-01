@@ -59,11 +59,38 @@
                         </li>
 
                         <li class="sidebar-item ">
-                            <a href="/barang" class='sidebar-link'>
+                            <a href="/kendaraan" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="<?php base_url(); ?>/assets/vendors/bootstrap-icons/bootstrap-icons.svg#clipboard-plus"></use>
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person-check-fill"></use>
                                 </svg>
-                                <span>Data Barang</span>
+                                <span>Profil</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="/kendaraan" class='sidebar-link'>
+                                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid-3x3-gap-fill"></use>
+                                </svg>
+                                <span>Jenis Kendaraan</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="/kendaraan" class='sidebar-link'>
+                                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#share-fill"></use>
+                                </svg>
+                                <span>Kendaraan Pinjam Pakai</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="/kendaraan" class='sidebar-link'>
+                                <svg class="bi" width="1em" height="1em" fill="currentColor">
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-checklist"></use>
+                                </svg>
+                                <span>Layanan</span>
                             </a>
                         </li>
 
@@ -124,7 +151,7 @@
 
                     </div>
                     <div class="float-end">
-                        <p>Sekretariat DPRD Kabupaten Pringsewu
+                        <p>Sekretariat Kabupaten Pringsewu
                         </p>
                     </div>
                 </div>
