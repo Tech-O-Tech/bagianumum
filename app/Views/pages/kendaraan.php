@@ -51,7 +51,7 @@
                                                                 <a href="<?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" style="width:50px;hight:50px;" alt=""></a>
                                                             </center>
                                                         </td>
-                                                        <td><?= $product->nama_pemilik; ?></td>
+                                                        <td><?= $product->nama_jabatan; ?></td>
                                                         <td><?= $product->alamat; ?></td>
                                                         <td><?= $product->merk; ?></td>
                                                         <td>

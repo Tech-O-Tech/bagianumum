@@ -20,7 +20,7 @@ class Kendaraan extends ResourceController
     {
 
         if ($this->session->get('status') == 'admin') {
-            $dataProduct = $this->model->findAll();
+            $dataProduct = $this->model->getKendaraan()->getResult();;
             return view('pages/kendaraan', ['produk' => $dataProduct]);
         } else {
             return redirect()->to('/');
