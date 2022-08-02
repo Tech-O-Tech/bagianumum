@@ -41,8 +41,8 @@
                                         <td>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="email-id-vertical">Nomor Registrasi</label>
-                                                    <input type="text" id="email-id-vertical" class="form-control" name="no_registrasi" placeholder="Nomor Registrasi">
+                                                    <label for="email-id-vertical">Nomor Registrasi / Nomor Polisi</label>
+                                                    <input type="text" id="email-id-vertical" class="form-control" name="no_registrasi" placeholder="Nomor Registrasi / Nomor Polisi">
                                                 </div>
                                             </div>
                                         </td>
@@ -213,8 +213,13 @@
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <div class="checkbox">
-                                                        <input name="pinjam_pakai" value="1" type="checkbox" id="checkbox1" class="form-check-input">
-                                                        <label for="checkbox1">Pinjam Pakai</label>
+
+                                                        <label for="first-name-vertical">Pinjam Pakai</label>
+                                                        <input class="form-control" type="text" name="pinjam_pakai" placeholder="Kendaraan Pinjam Pakai">
+
+
+                                                        <!-- <input name="pinjam_pakai" value="1" type="checkbox" id="checkbox1" class="form-check-input">
+                                                        <label for="checkbox1">Pinjam Pakai</label> -->
                                                     </div>
                                                 </div>
                                             </div>

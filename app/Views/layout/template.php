@@ -70,20 +70,46 @@
                         <li class="sidebar-item ">
                             <a href="/kendaraan" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#grid-3x3-gap-fill"></use>
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-list"></use>
                                 </svg>
                                 <span>Jenis Kendaraan</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
-                            <a href="/kendaraan" class='sidebar-link'>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#share-fill"></use>
                                 </svg>
                                 <span>Kendaraan Pinjam Pakai</span>
                             </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/pinjampakai/pdam">PDAM</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../program/program.php">KODIM</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../kegiatan/kegiatan.php">MUI</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../rincian_belanja/rincian_belanja.php">KPU</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../kegiatan/kegiatan.php">KONI</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../sub_kegiatan/sub_kegiatan.php">KAJARI</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="../rincian_belanja/rincian_belanja.php">POLRES</a>
+                                </li>
+                            </ul>
                         </li>
+
+
 
                         <li class="sidebar-item ">
                             <a href="/kendaraan" class='sidebar-link'>

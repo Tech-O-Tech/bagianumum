@@ -20,9 +20,10 @@
 
                         <form action="/kendaraan/<?= $product->id_kendaraan; ?>" method="POST" enctype='multipart/form-data'>
                             <?php csrf_field() ?>
-                            <input type="hidden" value="<?= $product->foto_stnk; ?>" name="logo_ormas_lama">
-                            <input type="hidden" value="<?= $product->foto_kendaraan; ?>" name="foto_ketua_pusat_lama">
                             <input type="hidden" name="_method" value="PUT">
+                            <input type="hidden" value="<?= $product->foto_stnk; ?>" name="foto_stnk_lama">
+                            <input type="hidden" value="<?= $product->foto_kendaraan; ?>" name="foto_kendaraan_lama">
+
 
 
 
@@ -34,8 +35,8 @@
                                         <td>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="email-id-vertical">Nomor Registrasi</label>
-                                                    <input type="text" id="email-id-vertical" class="form-control" name="no_registrasi" value="<?= $product->no_registrasi; ?>" placeholder="Nomor Registrasi">
+                                                    <label for="email-id-vertical">Nomor Registrasi / Nomor Polisi</label>
+                                                    <input type="text" id="email-id-vertical" class="form-control" name="no_registrasi" value="<?= $product->no_registrasi; ?>" placeholder="Nomor Registrasi / Nomor Polisi">
                                                 </div>
                                             </div>
                                         </td>
@@ -205,14 +206,19 @@
                                     <div class="form-group">
 
 
-                                        <div class="checkbox">
+
+                                        <label for="first-name-vertical">Pinjam Pakai</label>
+                                        <input class="form-control" type="text" name="pinjam_pakai" value="<?= $product->pinjam_pakai; ?>" placeholder="Pinjam Pakai">
+
+
+                                        <!-- <div class="checkbox">
 
 
                                             <input name="pinjam_pakai" value="1" type="checkbox" id="checkbox1" <?php if ($product->pinjam_pakai == 1) {
                                                                                                                     echo "checked";
                                                                                                                 } ?> class="form-check-input">
                                             <label for="checkbox1">Pinjam Pakai</label>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </div>

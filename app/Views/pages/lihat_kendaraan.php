@@ -42,8 +42,8 @@
                                     <td>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="email-id-vertical">Nomor Registrasi</label>
-                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="no_registrasi" value="<?= $product->no_registrasi; ?>" placeholder="Nomor Registrasi">
+                                                <label for="email-id-vertical">Nomor Registrasi / Nomor Polisi</label>
+                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="no_registrasi" value="<?= $product->no_registrasi; ?>">
                                             </div>
                                         </div>
                                     </td>
@@ -51,7 +51,7 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="email-id-vertical">Nama Pemilik</label>
-                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="nama_pemilik" value="<?= $product->nama_jabatan; ?>" placeholder="Nama Pemilik">
+                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="nama_pemilik" value="<?= $product->nama_pemilik; ?>">
                                             </div>
                                         </div>
                                     </td>
@@ -61,7 +61,7 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="email-id-vertical">Alamat</label>
-                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="alamat" value="<?= $product->alamat; ?>" placeholder="Alamat">
+                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="alamat" value="<?= $product->alamat; ?>">
                                             </div>
                                         </div>
                                     </td>
@@ -69,7 +69,7 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="email-id-vertical">Merk</label>
-                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="merk" value="<?= $product->merk; ?>" placeholder="Merk">
+                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="merk" value="<?= $product->merk; ?>">
                                             </div>
                                         </div>
                                     </td>
@@ -80,14 +80,14 @@
                                             <label for="contact-info-vertical">Tipe</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="tipe" value="<?= $product->tipe; ?>" placeholder="Tipe">
+                                                <input class="form-control" type="text" readonly name="tipe" value="<?= $product->tipe; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Jenis</label>
-                                            <input class="form-control" type="text" readonly name="jenis" value="<?= $product->jenis; ?>" id="tanpa-rupiah" placeholder="Jenis">
+                                            <input class="form-control" type="text" readonly name="jenis" value="<?= $product->jenis; ?>" id="tanpa-rupiah">
 
                                         </div>
                                     </td>
@@ -98,14 +98,14 @@
                                             <label for="contact-info-vertical">Model</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="model" value="<?= $product->model; ?>" placeholder="Model">
+                                                <input class="form-control" type="text" readonly name="model" value="<?= $product->model; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Tahun Pembuatan</label>
-                                            <input class="form-control" type="text" readonly name="tahun_pembuatan" value="<?= $product->tahun_pembuatan; ?>" placeholder="Tahun Pembuatan">
+                                            <input class="form-control" type="text" readonly name="tahun_pembuatan" value="<?= $product->tahun_pembuatan; ?>">
 
                                         </div>
                                     </td>
@@ -117,14 +117,14 @@
                                             <label for="contact-info-vertical">Isi Silinder</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="isi_silinder" value="<?= $product->isi_silinder; ?>" placeholder="Isi Silinder">
+                                                <input class="form-control" type="text" readonly name="isi_silinder" value="<?= $product->isi_silinder; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Nomor Rangka</label>
-                                            <input class="form-control" type="text" readonly name="no_rangka" value="<?= $product->no_rangka; ?>" placeholder="Nomor Rangka">
+                                            <input class="form-control" type="text" readonly name="no_rangka" value="<?= $product->no_rangka; ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -135,14 +135,14 @@
                                             <label for="contact-info-vertical">Nomor Mesin</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="no_mesin" value="<?= $product->no_mesin; ?>" placeholder="Nomor Mesin">
+                                                <input class="form-control" type="text" readonly name="no_mesin" value="<?= $product->no_mesin; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Warna</label>
-                                            <input class="form-control" type="text" readonly name="warna" value="<?= $product->warna; ?>" placeholder="Warna">
+                                            <input class="form-control" type="text" readonly name="warna" value="<?= $product->warna; ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -153,14 +153,14 @@
                                             <label for="contact-info-vertical">Bahan Bakar</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="bahan_bakar" value="<?= $product->bahan_bakar; ?>" placeholder="Bahan Bakar">
+                                                <input class="form-control" type="text" readonly name="bahan_bakar" value="<?= $product->bahan_bakar; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Warna TNKB</label>
-                                            <input class="form-control" type="text" readonly name="warna_tnkb" value="<?= $product->warna_tnkb; ?>" placeholder="Warna TNKB">
+                                            <input class="form-control" type="text" readonly name="warna_tnkb" value="<?= $product->warna_tnkb; ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -171,14 +171,14 @@
                                             <label for="contact-info-vertical">Nomor BPKB</label>
 
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly name="no_bpkb" value="<?= $product->no_bpkb; ?>" placeholder="Nomor BPKB">
+                                                <input class="form-control" type="text" readonly name="no_bpkb" value="<?= $product->no_bpkb; ?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="form-group">
                                             <label for="first-name-vertical">Kode Lokasi</label>
-                                            <input class="form-control" type="text" readonly name="kode_lokasi" value="<?= $product->kode_lokasi; ?>" placeholder="Kode Lokasi">
+                                            <input class="form-control" type="text" readonly name="kode_lokasi" value="<?= $product->kode_lokasi; ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -212,10 +212,12 @@
 
                             <div class="col-12">
                                 <div class="form-group">
-                                    <?php if ($product->pinjam_pakai == 1) {
+                                    <?php if ($product->pinjam_pakai != NULL) {
                                     ?>
                                         <br><br>
-                                        <span class="badge bg-primary">PINJAM PAKAI</span>
+
+                                        <label for="first-name-vertical">Pinjam Pakai</label>
+                                        <input class="form-control" type="text" readonly name="pinjam_pakai" value="<?= $product->pinjam_pakai; ?>">
 
                                     <?php
                                     }

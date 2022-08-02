@@ -112,6 +112,13 @@ class Kendaraan extends ResourceController
         return view('/pages/lihat_kendaraan', ['product' => $dataProduct]);
     }
 
+    public function pdam()
+    {
+
+        return view('/pages/pdam');
+    }
+
+
 
     public function edit($id_kendaraan = null)
     {
@@ -131,17 +138,57 @@ class Kendaraan extends ResourceController
     public function update($id_kendaraan = null)
     {
 
-        //Untuk Update
-        //$dataProduct = $this->request->getPost();
+        //Tangkap File Docx
+        $foto_stnk = $this->request->getFile('foto_stnk');
+        // cek logo, apakah logo tetap logo lama
+        if ($foto_stnk->getError() == 4) {
+            $namaFilefoto_stnk = $this->request->getVar('foto_stnk_lama');
+        } else {
+            //ambil nama file
+            $namaFilefoto_stnk = $foto_stnk->getName();
+            //pindahkan file
+            $foto_stnk->move('uploads/stnk', $namaFilefoto_stnk);
+        }
+
+
+        //Tangkap File Docx
+        $foto_kendaraan = $this->request->getFile('foto_kendaraan');
+        // cek logo, apakah logo tetap logo lama
+        if ($foto_kendaraan->getError() == 4) {
+            $namaFilefoto_kendaraan = $this->request->getVar('foto_kendaraan_lama');
+        } else {
+            //ambil nama file
+            $namaFilefoto_kendaraan = $foto_kendaraan->getName();
+            //pindahkan file
+            $foto_kendaraan->move('uploads/kendaraan', $namaFilefoto_kendaraan);
+        }
+
         $this->model->where('id_kendaraan', $id_kendaraan)->set([
-            'kode_kendaraan' => $this->request->getVar('kode_kendaraan'),
-            'nama' => $this->request->getVar('nama'),
-            'volume' => $this->request->getVar('volume'),
-            'satuan' => $this->request->getVar('satuan'),
-            'harga' => $this->request->getVar('harga')
+
+            'no_registrasi' => $this->request->getVar('no_registrasi'),
+            'nama_pemilik' => $this->request->getVar('nama_pemilik'),
+            'alamat' => $this->request->getVar('alamat'),
+            'merk' => $this->request->getVar('merk'),
+            'tipe' => $this->request->getVar('tipe'),
+            'jenis' => $this->request->getVar('jenis'),
+            'model' => $this->request->getVar('model'),
+            'tahun_pembuatan' => $this->request->getVar('tahun_pembuatan'),
+            'isi_silinder' => $this->request->getVar('isi_silinder'),
+            'no_rangka' => $this->request->getVar('no_rangka'),
+
+            'no_mesin' => $this->request->getVar('no_mesin'),
+            'warna' => $this->request->getVar('warna'),
+            'bahan_bakar' => $this->request->getVar('bahan_bakar'),
+            'warna_tnkb' => $this->request->getVar('warna_tnkb'),
+            'no_bpkb' => $this->request->getVar('no_bpkb'),
+            'kode_lokasi' => $this->request->getVar('kode_lokasi'),
+            'foto_stnk' =>  $namaFilefoto_stnk,
+            'foto_kendaraan' => $namaFilefoto_kendaraan,
+            'pinjam_pakai' => $this->request->getVar('pinjam_pakai'),
         ])->update();
 
-        session()->setFlashdata('pesan', 'Data Berhasil diubah.');
+        session()->setFlashdata('pesan', 'Data Berhasil Diedit.');
+
         return redirect()->to('/kendaraan');
     }
 }

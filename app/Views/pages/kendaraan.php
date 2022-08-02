@@ -30,12 +30,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>No.</th>
-                                                    <th>No Registrasi</th>
+                                                    <th>No Registrasi/Polisi</th>
                                                     <th>Foto Kendaraan</th>
-                                                    <th>Nama Pemilik</th>
-                                                    <th>Alamat</th>
+                                                    <th>Pemilik</th>
                                                     <th>Merk</th>
-                                                    <th>Aksi</th>
+                                                    <th width="20%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -52,7 +51,6 @@
                                                             </center>
                                                         </td>
                                                         <td><?= $product->nama_jabatan; ?></td>
-                                                        <td><?= $product->alamat; ?></td>
                                                         <td><?= $product->merk; ?></td>
                                                         <td>
                                                             <div class="row">
