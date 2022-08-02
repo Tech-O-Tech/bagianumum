@@ -51,7 +51,7 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="email-id-vertical">Nama Pemilik</label>
-                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="nama_pemilik" value="<?= $product->nama_pemilik; ?>" placeholder="Nama Pemilik">
+                                                <input type="text" readonly id="email-id-vertical" class="form-control" name="nama_pemilik" value="<?= $product->nama_jabatan; ?>" placeholder="Nama Pemilik">
                                             </div>
                                         </div>
                                     </td>
