@@ -14,8 +14,6 @@
                             <h4>Data Kendaraan Pinjam Pakai (PDAM)
                                 <!-- <a href="/kendaraan/new" class="btn btn-primary">+ Tambah</a> -->
                             </h4>
-
-
                         </div>
                         <div class="card-body">
 
@@ -34,7 +32,6 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-
                                                 <?php $i = 1; ?>
                                                 <?php foreach ($produk as $product) : ?>
                                                     <tr>
@@ -42,7 +39,6 @@
                                                         <td><?= $product->no_registrasi; ?></td>
                                                         <td>
                                                             <center>
-
                                                                 <a href="<?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" style="width:50px;hight:50px;" alt=""></a>
                                                             </center>
                                                         </td>

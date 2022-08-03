@@ -27,9 +27,6 @@
     <div id="app">
         <div id="sidebar" class="active">
 
-
-
-
             <div class="sidebar-wrapper active">
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
@@ -76,7 +73,6 @@
                             </a>
                         </li>
 
-
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
@@ -89,35 +85,45 @@
                                     <a href="/pinjampakai/pdam">PDAM</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../program/program.php">KODIM</a>
+                                    <a href="/pinjampakai/kodim">KODIM</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../kegiatan/kegiatan.php">MUI</a>
+                                    <a href="/pinjampakai/mui">MUI</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../rincian_belanja/rincian_belanja.php">KPU</a>
+                                    <a href="/pinjampakai/kpu">KPU</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../kegiatan/kegiatan.php">KONI</a>
+                                    <a href="/pinjampakai/koni">KONI</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../sub_kegiatan/sub_kegiatan.php">KAJARI</a>
+                                    <a href="/pinjampakai/kajari">KAJARI</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="../rincian_belanja/rincian_belanja.php">POLRES</a>
+                                    <a href="/pinjampakai/polres">POLRES</a>
                                 </li>
                             </ul>
                         </li>
 
-
-
-                        <li class="sidebar-item ">
+                        <li class="sidebar-item  has-sub">
                             <a href="/kendaraan" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-checklist"></use>
                                 </svg>
                                 <span>Layanan</span>
                             </a>
+
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/layanan/pajak">Pajak</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/layanan/pemeliharaan">Pemeliharaan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/layanan/asuransi">Asuransi</a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="sidebar-item ">
@@ -128,12 +134,11 @@
                                 <span>Logout</span>
                             </a>
                         </li>
+
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
-
-
 
         </div>
         <div id="main">
@@ -146,27 +151,6 @@
             <div class="page-heading">
                 <h3>Sistem Informasi Penatausahaan Barang Persedian</h3>
             </div>
-            <!-- <div class="page-content">
-                <section class="row">
-                    <div class="col-12 col-lg-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Grafik Jumlah BKP</h4>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-            </div> -->
-
 
             <?= $this->renderSection('content') ?>
 
