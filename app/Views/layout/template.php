@@ -64,13 +64,21 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
+                        <li class="sidebar-item  has-sub ">
                             <a href="/kendaraan" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
                                     <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-list"></use>
                                 </svg>
                                 <span>Jenis Kendaraan</span>
                             </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="/jeniskendaraan/mobil">Mobil</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="/jeniskendaraan/motor">Motor</a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="sidebar-item  has-sub">

@@ -26,6 +26,7 @@ class Kendaraan extends ResourceController
             return redirect()->to('/');
         }
     }
+
     public function new()
     {
         return view('pages/tambah_kendaraan');
