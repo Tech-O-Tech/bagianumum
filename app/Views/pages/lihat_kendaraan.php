@@ -191,7 +191,7 @@
                                             <div class="input-group">
                                                 <div class="custom-file">
 
-                                                    <a href="<?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_stnk; ?>" target="blank"> <img src=" <?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" style="width:200px;hight:300px;" alt=""> </a>
+                                                    <a href="<?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" target="blank"> <img src=" <?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" style="width:200px;hight:300px;" alt=""> </a>
 
                                                 </div>
                                             </div>

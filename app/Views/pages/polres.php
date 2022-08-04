@@ -28,7 +28,7 @@
                                                     <th>Foto Kendaraan</th>
                                                     <th>Pemilik</th>
                                                     <th>Merk</th>
-                                                    <!-- <th width="20%">Aksi</th> -->
+                                                    <th width="10%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -44,12 +44,12 @@
                                                         </td>
                                                         <td><?= $product->nama_jabatan; ?></td>
                                                         <td><?= $product->merk; ?></td>
-                                                        <!-- <td>
+                                                        <td>
                                                             <div class="row">
                                                                 <div class="col-auto px-0">
                                                                     <a href="/kendaraan/<?= $product->id_kendaraan; ?>/show" class="btn btn-success mr-2">Lihat</a>
                                                                 </div> &nbsp;
-                                                                <div class="col-auto px-0">
+                                                                <!-- <div class="col-auto px-0">
                                                                     <a href="/kendaraan/<?= $product->id_kendaraan; ?>/edit" class="btn btn-warning mr-2">Edit</a>
                                                                 </div>&nbsp;
                                                                 <div class="col-auto px-0">
@@ -57,9 +57,9 @@
                                                                         <input type="hidden" name="_method" value="DELETE">
                                                                         <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?') ">Delete</button>
                                                                     </form>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
-                                                        </td> -->
+                                                        </td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>

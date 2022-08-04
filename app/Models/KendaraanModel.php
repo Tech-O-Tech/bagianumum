@@ -38,7 +38,8 @@ class KendaraanModel extends Model
 
             ->join('jabatan', 'kendaraan.nama_pemilik = jabatan.id_jabatan')
             ->select('kendaraan.id_kendaraan, kendaraan.no_registrasi, jabatan.nama_jabatan, kendaraan.alamat, kendaraan.merk, kendaraan.tipe, kendaraan.jenis, kendaraan.model, kendaraan.tahun_pembuatan, kendaraan.isi_silinder, kendaraan.no_rangka, kendaraan.no_mesin, kendaraan.warna, kendaraan.bahan_bakar, kendaraan.warna_tnkb, kendaraan.no_bpkb, kendaraan.kode_lokasi, kendaraan.foto_stnk, kendaraan.foto_kendaraan, kendaraan.pinjam_pakai')
-            ->where(['jenis' => "Roda Empat"])
+            ->where('jenis !=', 'Roda Dua')
+            ->where('jenis !=', 'Roda Tiga')
             ->get();
         return $query;
     }
@@ -49,8 +50,8 @@ class KendaraanModel extends Model
 
             ->join('jabatan', 'kendaraan.nama_pemilik = jabatan.id_jabatan')
             ->select('kendaraan.id_kendaraan, kendaraan.no_registrasi, jabatan.nama_jabatan, kendaraan.alamat, kendaraan.merk, kendaraan.tipe, kendaraan.jenis, kendaraan.model, kendaraan.tahun_pembuatan, kendaraan.isi_silinder, kendaraan.no_rangka, kendaraan.no_mesin, kendaraan.warna, kendaraan.bahan_bakar, kendaraan.warna_tnkb, kendaraan.no_bpkb, kendaraan.kode_lokasi, kendaraan.foto_stnk, kendaraan.foto_kendaraan, kendaraan.pinjam_pakai')
-            ->where(['jenis' => "Roda Dua"])
-            ->where(['jenis' => "Roda Tiga"])
+            ->where('jenis !=', 'Roda Empat')
+            ->where('jenis !=', 'Bus')
             ->get();
         return $query;
     }

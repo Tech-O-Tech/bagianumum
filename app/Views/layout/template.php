@@ -157,7 +157,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Sistem Informasi Penatausahaan Barang Persedian</h3>
+                <h3>Sistem Informasi Pengelolaan dan Pemeliharaan Kendaraan Dinas</h3>
             </div>
 
             <?= $this->renderSection('content') ?>
