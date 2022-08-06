@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'kendaraan',
+        'database' => 'sipp',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
