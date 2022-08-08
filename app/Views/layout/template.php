@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMPERANDIS</title>
+    <title>SIPP</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="<?php base_url(); ?>/home/home.php"><img src="<?php base_url(); ?>/assets/images/logo/logo.png" style="width:100%; height:100%;"></a>
+                            <a href="<?php base_url(); ?>/home/home.php"><img src="<?php base_url(); ?>/assets/images/logo3.png" style="width:100%; height:100%;"></a>
                         </div>
 
                         <div class="toggler">
@@ -55,84 +55,149 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
-                            <a href="/kendaraan" class='sidebar-link'>
-                                <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#person-check-fill"></use>
-                                </svg>
-                                <span>Profil</span>
-                            </a>
-                        </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="/sertifikasi" class='sidebar-link'>
 
-                        <li class="sidebar-item  has-sub ">
-                            <a href="/kendaraan" class='sidebar-link'>
+
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-list"></use>
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#bookmarks-fill"></use>
                                 </svg>
-                                <span>Jenis Kendaraan</span>
+                                <span>Sertifikasi</span>
                             </a>
+
                             <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="/jeniskendaraan/mobil">Mobil</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/jeniskendaraan/motor">Motor</a>
-                                </li>
+
+                                <?php $this->session = session(); ?>
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "mahasiswa") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/ukd">UKD</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/sertifikasi/toefl">TOEFL</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/sertifikasi/jadwal">Informasi Jadwal</a>
+                                    </li>
+                                <?php } ?>
+
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "prodi") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/sertifikasi/nilai">Nilai</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/sertifikasi/rekap_nilai">Rekap Nilai</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/sertifikasi/sertifikat">Sertifikat</a>
+                                    </li>
+                                <?php } ?>
+
                             </ul>
                         </li>
+
+
 
                         <li class="sidebar-item  has-sub">
-                            <a href="#" class='sidebar-link'>
+                            <a href="/pkl" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#share-fill"></use>
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#file-earmark-medical-fill"></use>
                                 </svg>
-                                <span>Kendaraan Pinjam Pakai</span>
+                                <span>PKL</span>
                             </a>
+
                             <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/pdam">PDAM</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/kodim">KODIM</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/mui">MUI</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/kpu">KPU</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/koni">KONI</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/kajari">KAJARI</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/pinjampakai/polres">POLRES</a>
-                                </li>
+
+                                <?php $this->session = session(); ?>
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "mahasiswa") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/daftar">Pendaftaran</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/bukti">Bukti Persetujuan Tempat PKL</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/download">Download Form</a>
+                                    </li>
+                                <?php } ?>
+
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "prodi") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/pengesahan">Pengesahan Tempat PKL</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/pembimbing">Penentuan Pembimbing PKL</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/nilai">Input Nilai</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/pkl/rekap">Rekap Nilai</a>
+                                    </li>
+                                <?php } ?>
+
                             </ul>
                         </li>
+
 
                         <li class="sidebar-item  has-sub">
-                            <a href="/kendaraan" class='sidebar-link'>
+                            <a href="/pkl" class='sidebar-link'>
                                 <svg class="bi" width="1em" height="1em" fill="currentColor">
-                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#card-checklist"></use>
+                                    <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#check-square-fill"></use>
                                 </svg>
-                                <span>Layanan</span>
+                                <span>Tugas Akhir</span>
                             </a>
 
                             <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="/layanan/pajak">Pajak</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/layanan/pemeliharaan">Pemeliharaan</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="/layanan/asuransi">Asuransi</a>
-                                </li>
+
+                                <?php $this->session = session(); ?>
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "mahasiswa") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/judul">Pengajuan Judul</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/bukti">Bukti Pengajuan</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/proposal">Pengajuan Seminar Proposal</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/ta">Pengajuan Sidang Tugas Akhir</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/download">Download</a>
+                                    </li>
+                                <?php } ?>
+
+                                <?php if ($this->session->get('status') == "admin" || $this->session->get('status') == "prodi") {
+                                    $this->session = session();
+                                ?>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/pengesahan">Pengesahan Judul TA</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/pembimbing">Penentuan Pembimbing PKL</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/nilai_proposal">Input Nilai Proposal</a>
+                                    </li>
+                                    <li class="submenu-item ">
+                                        <a href="/tugasakhir/nilai_ta">Input Nilai Sidang TA</a>
+                                    </li>
+                                <?php } ?>
+
                             </ul>
                         </li>
+
 
                         <li class="sidebar-item ">
                             <a href="/auth/logout" class='sidebar-link'>
@@ -157,7 +222,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Sistem Informasi Pengelolaan dan Pemeliharaan Kendaraan Dinas</h3>
+                <h3>Sistem Informasi Penunjang Prodi (SIPP)</h3>
             </div>
 
             <?= $this->renderSection('content') ?>
@@ -169,7 +234,7 @@
 
                     </div>
                     <div class="float-end">
-                        <p>Sekretariat Kabupaten Pringsewu
+                        <p>AMIK DCC Pringsewu
                         </p>
                     </div>
                 </div>
