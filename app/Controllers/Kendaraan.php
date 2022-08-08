@@ -31,7 +31,7 @@ class Kendaraan extends ResourceController
 
     public function new()
     {
-        $dataProduct = $this->model->getKendaraan()->getResult();;
+        $dataProduct = $this->model2->getJabatan();
         return view('pages/tambah_kendaraan', ['jabatan' => $dataProduct]);
     }
 

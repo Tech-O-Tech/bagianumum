@@ -53,8 +53,8 @@
                                                     <!-- <input type="text" id="email-id-vertical" class="form-control" name="nama_pemilik" placeholder="Nama Pemilik"> -->
                                                     <select class="form-control theSelect" name="nama_pemilik" onChange="update_opd()">
                                                         <?php foreach ($jabatan as $kr) { ?>
-                                                            <option id="<?php echo $kr["nama_pemilik"]; ?>" value="<?php echo $kr["jenis"]; ?>">
-                                                                <?php echo $kr["jenis"]; ?>
+                                                            <option value="<?php echo $kr["id_jabatan"]; ?>">
+                                                                <?php echo $kr["nama_jabatan"]; ?>
                                                             </option>
                                                         <?php } ?>
                                                     </select>

@@ -14,9 +14,7 @@ class JabatanModel extends Model
     public function getJabatan()
     {
 
-        $query =  $this->db->table('jabatan')
-            ->select('id_jabatan', 'nama_jabatan')
-            ->get();
-        return $query;
+        return $this->db->table('jabatan')
+            ->get()->getResultArray();
     }
 }
