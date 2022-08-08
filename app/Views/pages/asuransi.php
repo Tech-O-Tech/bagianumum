@@ -11,15 +11,11 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4> Sertifikasi UKD
-                                <a href="/ukd/new" class="btn btn-primary">+ Daftar</a>
+                            <h4>Data Kendaraan Asuransi
+                                <!-- <a href="/kendaraan/new" class="btn btn-primary">+ Tambah</a> -->
                             </h4>
 
-                            <?php if (!empty(session()->getFlashdata('pesan'))) : ?>
-                                <div class="alert alert-success" role="alert">
-                                    <?php echo session()->getFlashdata('pesan'); ?>
-                                </div>
-                            <?php endif; ?>
+
                         </div>
                         <div class="card-body">
 
@@ -30,11 +26,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>No.</th>
-                                                    <th>Nama</th>
-                                                    <th>NPM</th>
-                                                    <th>Prodi</th>
-                                                    <th>Skema</th>
-                                                    <th width="20%">Aksi</th>
+                                                    <th>No Registrasi/Polisi</th>
+                                                    <th>Foto Kendaraan</th>
+                                                    <th>Foto STNK</th>
+                                                    <th>Pemilik</th>
+                                                    <th width="10%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -43,26 +39,35 @@
                                                 <?php foreach ($produk as $product) : ?>
                                                     <tr>
                                                         <td><?= $i++; ?></td>
-                                                        <td><?= $product->nama; ?></td>
+                                                        <td><?= $product->no_registrasi; ?></td>
                                                         <td>
-                                                            <?= $product->npm; ?>
+                                                            <center>
+
+                                                                <a href="<?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" style="width:50px;hight:50px;" alt=""></a>
+                                                            </center>
                                                         </td>
-                                                        <td><?= $product->prodi; ?></td>
-                                                        <td><?= $product->skema; ?></td>
+                                                        <td>
+                                                            <center>
+
+                                                                <a href="<?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" style="width:50px;hight:50px;" alt=""></a>
+                                                            </center>
+                                                        </td>
+                                                        <td><?= $product->nama_jabatan; ?></td>
+
                                                         <td>
                                                             <div class="row">
                                                                 <div class="col-auto px-0">
-                                                                    <a href="/ukd/<?= $product->id_ukd; ?>/show" class="btn btn-success mr-2">Lihat</a>
+                                                                    <a href="/kendaraan/<?= $product->id_kendaraan; ?>/show" class="btn btn-success mr-2">Lihat</a>
                                                                 </div> &nbsp;
-                                                                <div class="col-auto px-0">
-                                                                    <a href="/ukd/<?= $product->id_ukd; ?>/edit" class="btn btn-warning mr-2">Edit</a>
+                                                                <!-- <div class="col-auto px-0">
+                                                                    <a href="/kendaraan/<?= $product->id_kendaraan; ?>/edit" class="btn btn-warning mr-2">Edit</a>
                                                                 </div>&nbsp;
                                                                 <div class="col-auto px-0">
-                                                                    <form action="/ukd/<?= $product->id_ukd; ?>" method="POST">
+                                                                    <form action="/kendaraan/<?= $product->id_kendaraan; ?>" method="POST">
                                                                         <input type="hidden" name="_method" value="DELETE">
                                                                         <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?') ">Delete</button>
                                                                     </form>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </td>
                                                     </tr>

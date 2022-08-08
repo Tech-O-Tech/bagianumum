@@ -210,19 +210,14 @@
                                         <label for="first-name-vertical">Pinjam Pakai</label>
                                         <input class="form-control" type="text" name="pinjam_pakai" value="<?= $product->pinjam_pakai; ?>" placeholder="Pinjam Pakai">
 
-
-                                        <!-- <div class="checkbox">
-
-
-                                            <input name="pinjam_pakai" value="1" type="checkbox" id="checkbox1" <?php if ($product->pinjam_pakai == 1) {
-                                                                                                                    echo "checked";
-                                                                                                                } ?> class="form-check-input">
-                                            <label for="checkbox1">Pinjam Pakai</label>
-                                        </div> -->
-
                                     </div>
                                 </div>
 
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="asuransi" value="<?= $product->asuransi; ?>" placeholder="Asuransi">
+                                    </div>
+                                </div>
 
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-danger">Edit</button>

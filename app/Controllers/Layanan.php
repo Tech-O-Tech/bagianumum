@@ -29,7 +29,7 @@ class Layanan extends ResourceController
 
     public function asuransi()
     {
-        $dataPDAM = $this->model->getKendaraan()->getResult();;
+        $dataPDAM = $this->model->getAsuransi()->getResult();;
         return view('pages/asuransi', ['produk' => $dataPDAM]);
     }
 }

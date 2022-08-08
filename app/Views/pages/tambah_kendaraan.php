@@ -224,8 +224,20 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
 
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <div class="checkbox">
+
+
+                                                        <input type="checkbox" id="checkbox1" value="1" name="asuransi" class="form-check-input">
+                                                        <label for="first-name-vertical">Asuransi</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
 
