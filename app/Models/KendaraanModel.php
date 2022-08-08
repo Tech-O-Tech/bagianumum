@@ -11,7 +11,7 @@ class KendaraanModel extends Model
     protected $returnType = "object";
     protected $allowedFields        = [
         "no_registrasi", "nama_pemilik", "alamat", "merk", "tipe", "jenis", "model", "tahun_pembuatan", "isi_silinder", "no_rangka",
-        "no_mesin", "warna", "bahan_bakar", "warna_tnkb", "no_bpkb", "kode_lokasi", "foto_stnk", "foto_kendaraan", "pinjam_pakai"
+        "no_mesin", "warna", "bahan_bakar", "warna_tnkb", "no_bpkb", "kode_lokasi", "foto_stnk", "foto_kendaraan", "pinjam_pakai", "asuransi"
     ];
 
     public function getProduk($id_kendaraan = false)

@@ -50,7 +50,15 @@
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="email-id-vertical">Nama Pemilik</label>
-                                                    <input type="text" id="email-id-vertical" class="form-control" name="nama_pemilik" placeholder="Nama Pemilik">
+                                                    <!-- <input type="text" id="email-id-vertical" class="form-control" name="nama_pemilik" placeholder="Nama Pemilik"> -->
+                                                    <select class="form-control theSelect" name="nama_pemilik" onChange="update_opd()">
+                                                        <?php foreach ($jabatan as $kr) { ?>
+                                                            <option id="<?php echo $kr["nama_pemilik"]; ?>" value="<?php echo $kr["jenis"]; ?>">
+                                                                <?php echo $kr["jenis"]; ?>
+                                                            </option>
+                                                        <?php } ?>
+                                                    </select>
+
                                                 </div>
                                             </div>
                                         </td>
@@ -86,8 +94,13 @@
                                         <td>
                                             <div class="form-group">
                                                 <label for="first-name-vertical">Jenis</label>
-                                                <input class="form-control" type="text" name="jenis" id="tanpa-rupiah" placeholder="Jenis">
-
+                                                <!-- <input class="form-control" type="text" name="jenis" id="tanpa-rupiah" placeholder="Jenis"> -->
+                                                <select name="jenis" class="form-select" id="basicSelect">
+                                                    <option value="Roda Dua">Roda Dua</option>
+                                                    <option value="Roda Tiga">Roda Tiga</option>
+                                                    <option value="Roda Empat">Roda Empat</option>
+                                                    <option value="Bus">Bus</option>
+                                                </select>
                                             </div>
                                         </td>
                                     </tr>
@@ -218,8 +231,7 @@
                                                         <input class="form-control" type="text" name="pinjam_pakai" placeholder="Kendaraan Pinjam Pakai">
 
 
-                                                        <!-- <input name="pinjam_pakai" value="1" type="checkbox" id="checkbox1" class="form-check-input">
-                                                        <label for="checkbox1">Pinjam Pakai</label> -->
+
                                                     </div>
                                                 </div>
                                             </div>

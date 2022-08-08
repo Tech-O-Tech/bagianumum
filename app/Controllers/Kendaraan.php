@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\KendaraanModel;
+use App\Models\JabatanModel;
 
 class Kendaraan extends ResourceController
 
@@ -13,6 +14,7 @@ class Kendaraan extends ResourceController
     {
         $this->session = session();
         $this->model = new \App\Models\KendaraanModel();
+        $this->model2 = new \App\Models\JabatanModel();
     }
 
 
@@ -29,7 +31,8 @@ class Kendaraan extends ResourceController
 
     public function new()
     {
-        return view('pages/tambah_kendaraan');
+        $dataProduct = $this->model->getKendaraan()->getResult();;
+        return view('pages/tambah_kendaraan', ['jabatan' => $dataProduct]);
     }
 
     public function create()

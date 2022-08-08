@@ -215,7 +215,13 @@
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" name="asuransi" value="<?= $product->asuransi; ?>" placeholder="Asuransi">
+
+                                        <input type="checkbox" id="checkbox1" value="1" <?php if ($product->asuransi) {
+                                                                                            echo "checked";
+                                                                                        } else {
+                                                                                        } ?> name="asuransi" class="form-check-input">
+                                        <label for="checkbox1">Asuransi</label>
+
                                     </div>
                                 </div>
 
