@@ -38,7 +38,7 @@
 
                                 <table width="100%">
                                     <tr>
-                                        <td>
+                                        <td width="50%">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="email-id-vertical">Nomor Registrasi / Nomor Polisi</label>
@@ -46,7 +46,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td width="50%">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <label for="email-id-vertical">Nama Pemilik</label>
