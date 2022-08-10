@@ -111,7 +111,7 @@ $hasil_buss = $hasil_bus['bus'];
 
                                 </div>
 
-                                <img src="<?php base_url(); ?>/assets/images/bg.jpg" width="100%">
+                                <img src="<?php base_url(); ?>/assets/images/bg2.jpg" width="100%">
 
 
                             </div>
