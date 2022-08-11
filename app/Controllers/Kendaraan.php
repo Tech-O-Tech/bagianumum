@@ -119,7 +119,6 @@ class Kendaraan extends ResourceController
 
     public function pdam()
     {
-
         return view('/pages/pdam');
     }
 
