@@ -58,7 +58,6 @@
                                                             </option>
                                                         <?php } ?>
                                                     </select>
-
                                                 </div>
                                             </div>
                                         </td>

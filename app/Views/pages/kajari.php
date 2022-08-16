@@ -11,7 +11,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Data Kendaraan Pinjam Pakai (PDAM)
+                            <h4>Data Kendaraan Pinjam Pakai (KAJARI)
                                 <!-- <a href="/kendaraan/new" class="btn btn-primary">+ Tambah</a> -->
                             </h4>
 
