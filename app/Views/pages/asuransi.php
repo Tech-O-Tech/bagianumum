@@ -30,6 +30,7 @@
                                                     <th>Foto Kendaraan</th>
                                                     <th>Foto STNK</th>
                                                     <th>Pemilik</th>
+                                                    <th>Jumlah Premi</th>
                                                     <th width="10%">Aksi</th>
                                                 </tr>
                                             </thead>
@@ -53,13 +54,15 @@
                                                             </center>
                                                         </td>
                                                         <td><?= $product->nama_jabatan; ?></td>
+                                                        <td><?= $product->jumlah_premi; ?></td>
+
 
                                                         <td>
                                                             <div class="row">
                                                                 <div class="col-auto px-0">
                                                                     <a href="/kendaraan/<?= $product->id_kendaraan; ?>/show" class="btn btn-success mr-2">Lihat</a>
                                                                 </div> &nbsp;
-                                                                <!-- <div class="col-auto px-0">
+                                                                <!--   <div class="col-auto px-0">
                                                                     <a href="/kendaraan/<?= $product->id_kendaraan; ?>/edit" class="btn btn-warning mr-2">Edit</a>
                                                                 </div>&nbsp;
                                                                 <div class="col-auto px-0">

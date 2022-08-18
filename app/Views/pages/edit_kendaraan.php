@@ -225,6 +225,14 @@
                                     </div>
                                 </div>
 
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="first-name-vertical">Jumlah Premi</label>
+                                        <input class="form-control" type="number" name="jumlah_premi" value="<?= $product->jumlah_premi; ?>" placeholder="Jumlah Premi">
+
+                                    </div>
+                                </div>
+
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-danger">Edit</button>
                                 </div>

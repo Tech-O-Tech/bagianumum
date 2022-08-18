@@ -101,6 +101,8 @@ class Kendaraan extends ResourceController
             'foto_kendaraan' => $namaFilefoto_kendaraan,
             'pinjam_pakai' => $this->request->getVar('pinjam_pakai'),
             'asuransi' => $this->request->getVar('asuransi'),
+            'jumlah_premi' => $this->request->getVar('jumlah_premi'),
+
         ]);
 
         session()->setFlashdata('pesan', 'Data Berhasil ditambahkan.');
@@ -189,7 +191,8 @@ class Kendaraan extends ResourceController
             'foto_stnk' =>  $namaFilefoto_stnk,
             'foto_kendaraan' => $namaFilefoto_kendaraan,
             'pinjam_pakai' => $this->request->getVar('pinjam_pakai'),
-            'asuransi' => $this->request->getVar('asuransi')
+            'asuransi' => $this->request->getVar('asuransi'),
+            'jumlah_premi' => $this->request->getVar('jumlah_premi'),
         ])->update();
 
         session()->setFlashdata('pesan', 'Data Berhasil Diedit.');

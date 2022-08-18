@@ -250,6 +250,21 @@
                                                 </div>
                                             </div>
                                         </td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Jumlah Premi</label>
+                                                    <input class="form-control" type="number" name="jumlah_premi" placeholder="Jumlah Premi">
+
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
 
                                 </table>
