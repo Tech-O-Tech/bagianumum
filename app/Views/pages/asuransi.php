@@ -35,7 +35,6 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-
                                                 <?php $i = 1; ?>
                                                 <?php foreach ($produk as $product) : ?>
                                                     <tr>
@@ -43,20 +42,16 @@
                                                         <td><?= $product->no_registrasi; ?></td>
                                                         <td>
                                                             <center>
-
                                                                 <a href="<?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/kendaraan/<?= $product->foto_kendaraan; ?>" style="width:50px;hight:50px;" alt=""></a>
                                                             </center>
                                                         </td>
                                                         <td>
                                                             <center>
-
                                                                 <a href="<?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" target="blank"><img src=" <?php base_url(); ?>/uploads/stnk/<?= $product->foto_stnk; ?>" style="width:50px;hight:50px;" alt=""></a>
                                                             </center>
                                                         </td>
                                                         <td><?= $product->nama_jabatan; ?></td>
                                                         <td><?= $product->jumlah_premi; ?></td>
-
-
                                                         <td>
                                                             <div class="row">
                                                                 <div class="col-auto px-0">
